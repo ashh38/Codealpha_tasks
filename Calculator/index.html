@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="icon" href="icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="display" id="display">0</div>
+        <div class="buttons">
+            <button class="button-light-gray" onclick="buttonPressed('AC'); clearDisplay();">AC</button>
+            <button class="button-light-gray" onclick="buttonPressed('+/-')">+/-</button>
+            <button class="button-light-gray" onclick="buttonPressed('%')">%</button>
+            <button class="button-orange" onclick="buttonPressed('÷'); operation('/')">÷</button>
+            <button onclick="buttonPressed('7'); appendToDisplay('7')">7</button>
+            <button onclick="buttonPressed('8'); appendToDisplay('8')">8</button>
+            <button onclick="buttonPressed('9'); appendToDisplay('9')">9</button>
+            <button class="button-orange" onclick="buttonPressed('×'); operation('*')">×</button>
+            <button onclick="buttonPressed('4'); appendToDisplay('4')">4</button>
+            <button onclick="buttonPressed('5'); appendToDisplay('5')">5</button>
+            <button onclick="buttonPressed('6'); appendToDisplay('6')">6</button>
+            <button class="button-orange" onclick="buttonPressed('-'); operation('-')">-</button>
+            <button onclick="buttonPressed('1'); appendToDisplay('1')">1</button>
+            <button onclick="buttonPressed('2'); appendToDisplay('2')">2</button>
+            <button onclick="buttonPressed('3'); appendToDisplay('3')">3</button>
+            <button class="button-orange" onclick="buttonPressed('+'); operation('+')">+</button>
+            <button class="button-zero" onclick="buttonPressed('0'); appendToDisplay('0')">0</button>
+            <button onclick="buttonPressed('.'); appendToDisplay('.')">.</button>
+            <button class="button-orange" onclick="buttonPressed('='); calculate()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
